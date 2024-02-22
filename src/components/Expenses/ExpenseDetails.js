@@ -1,7 +1,7 @@
 import React from 'react';
 import './ExpenseDetails.css';
 
-function ExpenseDetails(props) {
+const ExpenseDetails = (props) => {
   return (
     <div className="expense-details">
       <h2>{props.title}</h2>

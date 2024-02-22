@@ -7,17 +7,17 @@
 
 .expense-details h2 {
   font-size: 1.8rem;
-  color: whitesmoke;
+  color: white;
   margin-bottom: 0.5rem;
 }
 
 .expense-amount {
   font-weight: bold;
   font-size: 2rem;
-  color: #53176e;
+  color: white;
   border: 2px solid #fff;
   border-radius: 12px;
-  background-color: rgb(117, 112, 112);
+  background-color: #53176e;
 }
 
 .expense-location {
