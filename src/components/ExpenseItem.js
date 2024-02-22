@@ -1,9 +1,7 @@
 import "./ExpenseItem.css";
-function ExpenseItem() {
-  const expenseDate = new Date(2022, 2, 23);
-  const expenseTitle = "Food";
-  const expenseAmount = 10;
-  const locationOfExpenditure = "Grocery Store";
+
+function ExpenseItem(props) {
+  const { expenseTitle, expenseAmount, locationOfExpenditure, expenseDate } = props;
 
   return (
     <div className="expense-item">
@@ -11,7 +9,7 @@ function ExpenseItem() {
       <div className="expense-item__description">
         <h2>{expenseTitle}</h2>
         <div className="expense-item__location">{locationOfExpenditure}</div>
-        <div className="expense-item__price">${expenseAmount}</div>
+        <div className="expense-item__price">Rs {expenseAmount}</div>
       </div>
     </div>
   );
