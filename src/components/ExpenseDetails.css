@@ -1,0 +1,26 @@
+/* ExpenseDetails.css */
+
+.expense-details {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.expense-details h2 {
+  font-size: 1.8rem;
+  color: whitesmoke;
+  margin-bottom: 0.5rem;
+}
+
+.expense-amount {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #53176e;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  background-color: rgb(117, 112, 112);
+}
+
+.expense-location {
+  color: wheat;
+  font-size: 1.2rem;
+}
