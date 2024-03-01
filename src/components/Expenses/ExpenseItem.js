@@ -5,6 +5,10 @@ import Card from '../UI/Card';
 import ExpenseDetails from './ExpenseDetails';
 
 const ExpenseItem = (props) => {
+  const clickHandler = () => {
+    const expenseItem = document.querySelector('.expense-item');
+    expenseItem.remove();
+  }
   return (
     <Card className='expense-item'>
       <ExpenseDate date={props.expenseDate} />
@@ -13,6 +17,7 @@ const ExpenseItem = (props) => {
         location={props.locationOfExpenditure}
         title={props.expenseTitle}
       />
+      <button onClick={clickHandler}>Delete Expense</button>
     </Card>
   );
 }
