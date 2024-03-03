@@ -9,10 +9,14 @@ const App = () => {
     { expenseTitle: 'Movies', expenseAmount: 200, locationOfExpenditure: 'Cinema', expenseDate: new Date(2022, 2, 25) }
   ];
 
+  const addExpenseHandler = expense => {
+    console.log('In App.js');
+    console.log(expense);
+  }
   return (
     <div>
       <h1>Expense Items</h1>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       {expenses.map((expense, index) => (
         <ExpenseItem key={index} {...expense} />
       ))}
